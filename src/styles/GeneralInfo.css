@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edf6f9;
+  font-family: Georgia, serif;
+}
+
+.general-info {
+  text-align: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.general-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.general-info input {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white !important;
+  color: #111 !important;
+}
+
+.general-info button {
+  margin-top: 10px;
+  padding: 6px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #111;
+  margin-top: 10px;
+}
+
+.contact p::before {
+  margin-right: 4px;
+}
+
+.contact p:not(:last-child)::after {
+  content: "|";
+  margin-left: 15px;
+  color: #999;
+}
